@@ -1,38 +1,61 @@
-import React from "react";
-import ICard from "./ICard";
-function ICardGallery() {
+// import React from "react";
+// import ICard from "./ICard";
+// import student1 from "../images/bdayimg.jpeg";
 
-    const student={
-        pic:{studentimage},
-        roll:"67573",
-        name:"sneha gupta",
-        branch:"CSE",
-        college:"ABES Engineering collge"
+// function ICardGallery() {
+//   const student = [
+//     {
+//       pic: student1,
+//       roll: "67573",
+//       name: "sneha gupta",
+//       branch: "CSE",
+//       college: "ABES Engineering college",
+//     },
+//     {
+//       pic: student1,
+//       roll: "67599",
+//       name: "umaima",
+//       branch: "CSE",
+//       college: "ABES Engineering college",
+//     },
+//     {
+//       pic: student1,
+//       roll: "67000",
+//       name: "siddhi",
+//       branch: "CSE",
+//       college: "ABES Engineering college",
+//     },
+//     {
+//       pic: student1,
+//       roll: "56777",
+//       name: "rahul kumar",
+//       branch: "CSE",
+//       college: "ABES Engineering college",
+//     },
+//     {
+//       pic: student1,
+//       roll: "67570",
+//       name: "pankaj kumar",
+//       branch: "CSE",
+//       college: "ABES Engineering college",
+//     },
+//   ];
 
-    }
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-evenly",
-        border: "2px solid black",
-      }}
-    >
-      {/* <ICard
-        roll="39988"
-        name="ankit kumar"
-        branch="CSE"
-        college="ABES Engineering college"
-      />
-      <ICard
-        roll="34365"
-        name="sneha"
-        branch="CSE"
-        college="ABES Engineering college"
-      /> */}
-      <ICard data={student}/>
-    </div>
-  );
-}
+//   return (
+//     <div
+//       style={{
+//         display: "flex",
+//         justifyContent: "space-evenly",
+//         flexWrap: "wrap",
+//         gap: "20px",
+//         border: "2px solid black",
+//       }}
+//      >
+//       {student.map((ele) => (
+//         <ICard key={ele.roll} data={ele} />
+//       ))}
+//     </div>
+//   );
+// }
 
-export default ICardGallery;
+// export default ICardGallery;
