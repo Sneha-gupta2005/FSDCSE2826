@@ -10,7 +10,7 @@ function NameChange() {
   }
 
   function updateName() {
-    setname("Rupika");
+    setname("sneha");
   }
   return (
     <div>
