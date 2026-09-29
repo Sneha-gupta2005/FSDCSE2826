@@ -1,20 +1,19 @@
 import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
-// import ICard from "./components/ICard";
-// import ICardGallery from "./components/ICardGallery";
-import Statehandling from "./components/Statehandling";
-import Bgcolor_change from "./components/Bgcolor_change";
+// import MyState from './components/MyState'
+// import ColorChange from './components/ColorChange'
+//import NameChange from './components/NameChange'
+import ImageManipulation from "./components/ImageManipulation";
 function App() {
   return (
-    <div>
-      {/* <ICardGallery /> */}
-      <StateHandling/>
+    <div
+      style={{ border: "4px solid pink", width: "1000px", height: "1000px" }}
+    >
+      {/* <MyState/>
+      <ColorChange/> 
+      <NameChange />*/}
+      <ImageManipulation />
     </div>
-
-   
   );
 }
 

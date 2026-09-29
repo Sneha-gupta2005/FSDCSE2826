@@ -1,17 +1,25 @@
-import React, { useState } from 'react'
-
-function Bgcolor_change() {
-
-    const[red,setRed]=useState(0);
-    const[green,setGreen]=useState(0);
-     const [blue, setBlue] = useState(0);
+import React from "react";
+import { useState } from "react";
+function ColorChange() {
+  const [red, setRed] = useState(0);
+  const [green, setGreen] = useState(0);
+  const [blue, setBlue] = useState(0);
   return (
     <div>
-        <h2>Change Background Color</h2>
-        <div style={{backgroundColor:`rgb($(red),$(green),$(blue))`,border:'2px solid red',height:"300px"}}></div>
+      <div
+        style={{
+          color: "white",
+          backgroundColor: `rgb(${red}, ${green}, ${blue})`,
+        }}
+      >
+        ColorChange
+      </div>
+      <div>
+        <button onClick={() => setRed(255)}>Red</button>
+        <button onClick={() => setGreen(255)}>Green</button>
+        <button onClick={() => setBlue(255)}>Blue</button>
+      </div>
     </div>
-  
-  )
+  );
 }
-
-export default Bgcolor_change
+export default ColorChange;

@@ -1,26 +1,23 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
 
-function Statehandling() {
-  const [count, setCount] = useState(100);
-
+function MyState() {
+  const [counter, setCounter] = useState(10);
   function increment() {
-    setCount(count + 20);
+    setCounter(counter + 10);
   }
-
   function decrement() {
-    setCount(count - 10);
+    setCounter(counter - 5);
   }
-
   return (
     <div>
-      <h1>State Handling</h1>
-
-      <h2>Count = {count}</h2>
-
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <h2> Counter:{counter}</h2>
+      <div>
+        <button onClick={increment}>Increment Counter</button>
+        <button onClick={decrement}>Decrement Counter</button>
+      </div>
     </div>
   );
 }
 
-export default Statehandling;
+export default MyState;
